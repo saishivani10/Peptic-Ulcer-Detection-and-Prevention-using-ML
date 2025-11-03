@@ -358,5 +358,6 @@ For issues or questions about the project, please refer to the source code docum
 
 **Version**: 1.0  
 **Last Updated**: November 2, 2025
-#   S m a r t - D i a g n o s t i c s - L e v e r a g i n g - M a c h i n e - L e a r n i n g - f o r - I m p r o v e d - D e t e c t i o n - o f - P e p t i c - U l c e r s  
+#   S m a r t - D i a g n o s t i c s - L e v e r a g i n g - M a c h i n e - L e a r n i n g - f o r - I m p r o v e d - D e t e c t i o n - o f - P e p t i c - U l c e r s 
+ 
  
