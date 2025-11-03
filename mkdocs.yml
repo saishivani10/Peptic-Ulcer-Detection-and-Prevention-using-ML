@@ -1,7 +1,7 @@
 site_name: Peptic Ulcer Detection and Prevention using ML
 site_description: Smart Diagnostics - ML-based detection and prevention of peptic ulcers and related diseases
-site_url: https://saishivani10.github.io/Smart-Diagnostics-Leveraging-Machine-Learning-for-Improved-Detection-of-Peptic-Ulcers/
-repo_url: https://github.com/saishivani10/Smart-Diagnostics-Leveraging-Machine-Learning-for-Improved-Detection-of-Peptic-Ulcers 
+site_url: https://saishivani10.github.io/Peptic-Ulcer-Detection-and-Prevention-using-ML/
+repo_url: https://github.com/saishivani10/Peptic-Ulcer-Detection-and-Prevention-using-ML 
 nav:
   - Home: index.md
   - Usage: usage.md
