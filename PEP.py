@@ -9,6 +9,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
+import os
 
 # Module-level model placeholders (built lazily)
 _MODEL_TREE = None
@@ -41,9 +42,12 @@ def build_models(verbose=False):
     if _MODEL_TREE is not None:
         return _MODEL_TREE, _MODEL_FOREST, _MODEL_GNB, _SYMPTOMS, _DISEASE
 
-    # Read CSVs
-    train = pd.read_csv('C:\\Users\\HELLO\\OneDrive\\Desktop\\Peptic Ulcer Detection\\training.csv')
-    test = pd.read_csv('C:\\Users\\HELLO\\OneDrive\\Desktop\\Peptic Ulcer Detection\\Testing.csv')
+    # Read CSVs using paths relative to this file for cross-platform compatibility
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    train_path = os.path.join(base_dir, 'training.csv')
+    test_path = os.path.join(base_dir, 'Testing.csv')
+    train = pd.read_csv(train_path)
+    test = pd.read_csv(test_path)
     # normalize column names: remove stray spaces so they match symptom keys
     train.columns = train.columns.str.replace(' ', '', regex=False)
     test.columns = test.columns.str.replace(' ', '', regex=False)

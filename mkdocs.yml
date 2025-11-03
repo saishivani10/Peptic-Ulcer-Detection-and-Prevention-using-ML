@@ -1,0 +1,19 @@
+site_name: Peptic Ulcer Detection
+site_description: Smart Diagnostics - ML-based detection of peptic ulcers and related diseases
+site_url: 
+repo_url: 
+nav:
+  - Home: index.md
+  - Usage: usage.md
+  - Models: models.md
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - content.code.copy
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+  - tables
